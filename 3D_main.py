@@ -60,11 +60,20 @@ def download_html(content, filename, text) :
 
 st.set_page_config(layout='wide')
 
-#! change later
-# st.markdown("""
-#       <style>      
-#       </style>           
-# """)
+st.markdown("""
+      <style>     
+            div[data-testid="stMarkdownContainer"] p{
+                font-size: 1.5em;
+                font-weight: 700;
+                color: #021d3a;
+            }
+            div[role="radiogroup"] div[data-testid="stMarkdownContainer"] p{
+                color: #021d3a;
+                font-size: 1em;
+                font-weight: 400;
+            }
+      </style>           
+""",unsafe_allow_html=True)
 
 st.title("3D Network Graph of League Of Legends Champions")
 
