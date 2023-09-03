@@ -1,0 +1,9 @@
+numpy
+pandas
+itertools
+streamlit
+plotly.express
+chart_studio.plotly 
+plotly.graph_objs
+igraph
+io
