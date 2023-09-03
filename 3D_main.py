@@ -63,20 +63,41 @@ st.set_page_config(layout='wide')
 
 st.markdown("""
       <style>     
+            .css-10oheav.eczjsme4{
+                padding: 3rem 1rem;
+            }
+            .block-container.css-z5fcl4.ea3mdgi4{
+                padding: 2rem 1rem 10rem;
+            }
             div[data-testid="stMarkdownContainer"] p{
                 font-size: 1.5em;
                 font-weight: 700;
                 color: #021d3a;
+            }
+            p.signature{
+                font-size: 1.1rem !important;
+                padding: 0.5rem 0 !important;
+                letter-spacing: 0.1rem !important;
+                color: #8c6d16 !important;
+                position : fixed !important;
+                bottom: 0 !important;
             }
             div[role="radiogroup"] div[data-testid="stMarkdownContainer"] p{
                 color: #021d3a;
                 font-size: 1em;
                 font-weight: 400;
             }
+            div[data-testid="stImage"] img {
+                border-radius: 50%;
+                margin: 0px auto;
+                width : 60%
+            }
       </style>           
 """,unsafe_allow_html=True)
 
 st.title("3D Network Graph of League Of Legends Champions")
+
+st.sidebar.image('img/PP2.jpg', use_column_width=False)
 
 choice = st.sidebar.radio("Choose your filter method : ", ["Nodes", "Groups"])
 selected_nodes = selected_grps = level_direct_sibling = None
@@ -320,6 +341,8 @@ if (selected_nodes != None) and (len(selected_nodes) > 0 ) :
         download_html(html_str.encode(), "plot.html", "Download plot as HTML")
 else : 
     st.write("Please select at least one Node :)")
+
+st.sidebar.write("<p class='signature'>EL OUAZANI TUHAMI Mohamed</p>",unsafe_allow_html=True)
 
 
 
