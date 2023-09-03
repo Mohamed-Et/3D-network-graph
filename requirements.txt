@@ -3,4 +3,3 @@ pandas
 streamlit
 plotly
 python-igraph
-io
