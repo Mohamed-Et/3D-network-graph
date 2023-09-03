@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import chart_studio.plotly as py
 from plotly.graph_objs import *
 import igraph as ig
 import io

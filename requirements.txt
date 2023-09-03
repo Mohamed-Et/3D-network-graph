@@ -1,8 +1,6 @@
 numpy
 pandas
 streamlit
-plotly.express
-chart_studio.plotly 
-plotly.graph_objs
+plotly
 python-igraph==0.8.0
 io
