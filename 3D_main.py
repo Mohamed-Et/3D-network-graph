@@ -6,8 +6,11 @@ from plotly.graph_objs import *
 import igraph as ig
 import io
 
-xlsNodes_path = r'C:/Python code/data mining/3D-viz/Data/Nodes.xlsx'
-xlsvertices_path = r'C:/Python code/data mining/3D-viz/Data/Vertices.xlsx'
+# xlsNodes_path = r'C:/Python code/data mining/3D-viz/Data/Nodes.xlsx'
+# xlsvertices_path = r'C:/Python code/data mining/3D-viz/Data/Vertices.xlsx'
+
+xlsNodes_path = r'Data/Nodes.xlsx'
+xlsvertices_path = r'Data/Vertices.xlsx'
 
 df_nodes_initial = pd.read_excel(xlsNodes_path)
 df_vertices_initial = pd.read_excel(xlsvertices_path)
